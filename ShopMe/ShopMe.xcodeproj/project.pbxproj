@@ -13,6 +13,7 @@
 		2C385F281B7AAEC0001DF1B3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C385F271B7AAEC0001DF1B3 /* Images.xcassets */; };
 		2C385F2B1B7AAEC0001DF1B3 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C385F291B7AAEC0001DF1B3 /* LaunchScreen.xib */; };
 		2C385F371B7AAEC0001DF1B3 /* ShopMeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C385F361B7AAEC0001DF1B3 /* ShopMeTests.swift */; };
+		2C385F421B7AB192001DF1B3 /* GenericVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C385F411B7AB192001DF1B3 /* GenericVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		2C385F301B7AAEC0001DF1B3 /* ShopMeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShopMeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C385F351B7AAEC0001DF1B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2C385F361B7AAEC0001DF1B3 /* ShopMeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopMeTests.swift; sourceTree = "<group>"; };
+		2C385F411B7AB192001DF1B3 /* GenericVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenericVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,7 @@
 		2C385F1D1B7AAEC0001DF1B3 /* ShopMe */ = {
 			isa = PBXGroup;
 			children = (
+				2C385F401B7AB168001DF1B3 /* Generic Classes */,
 				2C385F201B7AAEC0001DF1B3 /* AppDelegate.swift */,
 				2C385F221B7AAEC0001DF1B3 /* ViewController.swift */,
 				2C385F241B7AAEC0001DF1B3 /* Main.storyboard */,
@@ -110,6 +113,14 @@
 				2C385F351B7AAEC0001DF1B3 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2C385F401B7AB168001DF1B3 /* Generic Classes */ = {
+			isa = PBXGroup;
+			children = (
+				2C385F411B7AB192001DF1B3 /* GenericVC.swift */,
+			);
+			name = "Generic Classes";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -212,6 +223,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C385F421B7AB192001DF1B3 /* GenericVC.swift in Sources */,
 				2C385F231B7AAEC0001DF1B3 /* ViewController.swift in Sources */,
 				2C385F211B7AAEC0001DF1B3 /* AppDelegate.swift in Sources */,
 			);
