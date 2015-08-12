@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2C3858C91B7BDA1800889F2E /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C3858C81B7BDA1800889F2E /* CoreData.framework */; };
+		2C3858CC1B7BDA9100889F2E /* CDHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C3858CB1B7BDA9100889F2E /* CDHelper.swift */; };
 		2C385F211B7AAEC0001DF1B3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C385F201B7AAEC0001DF1B3 /* AppDelegate.swift */; };
 		2C385F231B7AAEC0001DF1B3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C385F221B7AAEC0001DF1B3 /* ViewController.swift */; };
 		2C385F261B7AAEC0001DF1B3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C385F241B7AAEC0001DF1B3 /* Main.storyboard */; };
@@ -27,6 +29,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2C3858C81B7BDA1800889F2E /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		2C3858CB1B7BDA9100889F2E /* CDHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CDHelper.swift; sourceTree = "<group>"; };
 		2C385F1B1B7AAEC0001DF1B3 /* ShopMe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShopMe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C385F1F1B7AAEC0001DF1B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2C385F201B7AAEC0001DF1B3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -45,6 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C3858C91B7BDA1800889F2E /* CoreData.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,9 +63,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2C3858CA1B7BDA3B00889F2E /* Generic Core Data Classes */ = {
+			isa = PBXGroup;
+			children = (
+				2C3858CB1B7BDA9100889F2E /* CDHelper.swift */,
+			);
+			name = "Generic Core Data Classes";
+			sourceTree = "<group>";
+		};
 		2C385F121B7AAEC0001DF1B3 = {
 			isa = PBXGroup;
 			children = (
+				2C3858C81B7BDA1800889F2E /* CoreData.framework */,
 				2C385F1D1B7AAEC0001DF1B3 /* ShopMe */,
 				2C385F331B7AAEC0001DF1B3 /* ShopMeTests */,
 				2C385F1C1B7AAEC0001DF1B3 /* Products */,
@@ -79,6 +93,7 @@
 		2C385F1D1B7AAEC0001DF1B3 /* ShopMe */ = {
 			isa = PBXGroup;
 			children = (
+				2C3858CA1B7BDA3B00889F2E /* Generic Core Data Classes */,
 				2C385F401B7AB168001DF1B3 /* Generic Classes */,
 				2C385F201B7AAEC0001DF1B3 /* AppDelegate.swift */,
 				2C385F221B7AAEC0001DF1B3 /* ViewController.swift */,
@@ -223,6 +238,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C3858CC1B7BDA9100889F2E /* CDHelper.swift in Sources */,
 				2C385F421B7AB192001DF1B3 /* GenericVC.swift in Sources */,
 				2C385F231B7AAEC0001DF1B3 /* ViewController.swift in Sources */,
 				2C385F211B7AAEC0001DF1B3 /* AppDelegate.swift in Sources */,
@@ -421,6 +437,7 @@
 				2C385F3C1B7AAEC0001DF1B3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2C385F3D1B7AAEC0001DF1B3 /* Build configuration list for PBXNativeTarget "ShopMeTests" */ = {
 			isa = XCConfigurationList;
@@ -429,6 +446,7 @@
 				2C385F3F1B7AAEC0001DF1B3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
