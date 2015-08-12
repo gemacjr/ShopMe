@@ -67,5 +67,40 @@ class CDHelper : NSObject {
         return _localStore
     }()
     
+    // MARK: - SETUP
+    required override init() {
+        super.init()
+        self.setupCoreData()
+    }
+    func setupCoreData() {
+        let theLocalStore = self.localStore
+    }
+    
+    // MARK: - SAVING
+    class func save (moc:NSManagedObjectContext!) {
+        
+        if moc.hasChanges == false {
+            println("SKIPPED save, context \(moc) has no changes")
+            return
+        }
+        var error: NSError?
+        if moc.save(&error) {
+            
+            println("SAVED context \(moc)")
+            
+            if moc.parentContext != nil {
+                save(moc.parentContext)
+            }
+            return
+        }
+        if let _error = error {
+            println("FAILED TO SAVE. \(_error.localizedDescription)")
+        }
+    }
+    
+    class func saveSharedContext() {
+        CDHelper.save(CDHelper.shared.context)
+    }
+    
     
 }
