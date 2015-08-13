@@ -58,13 +58,20 @@ class CDHelper : NSObject {
     
     // MARK: - STORE
     lazy var localStore: NSPersistentStore? = {
-        let options = [NSSQLitePragmasOption:["journal_mode":"DELETE"]]
+        
+        let options = [NSSQLitePragmasOption:["journal_mode":"DELETE"],
+            NSMigratePersistentStoresAutomaticallyOption:0,
+            NSInferMappingModelAutomaticallyOption:1]
+        
         var error: NSError?
-        let _localStore = self.coordinator.addPersistentStoreWithType(NSSQLiteStoreType, configuration: nil, URL: self.localStoreURL, options: options, error: &error)
-        if _localStore == nil {
-            println("Error creating store at '\(self.localStoreURL)'")
+        
+        if let _localStore = self.coordinator.addPersistentStoreWithType(NSSQLiteStoreType, configuration: nil, URL: self.localStoreURL, options: options as [NSObject : AnyObject], error: &error) {
+            return _localStore
         }
-        return _localStore
+        if let _error = error {
+            println("\(__FUNCTION__) ERROR: \(_error.localizedDescription)")
+        }
+        abort()
     }()
     
     // MARK: - SETUP

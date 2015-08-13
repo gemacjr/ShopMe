@@ -7,8 +7,12 @@
         <attribute name="photoData" optional="YES" attributeType="Binary" syncable="YES"/>
         <attribute name="quantity" optional="YES" attributeType="Float" defaultValueString="1" syncable="YES"/>
     </entity>
+    <entity name="Measurement" representedClassName="ShopMe.Measurement" syncable="YES">
+        <attribute name="abc" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
     <fetchRequest name="Test" entity="Item"/>
     <elements>
         <element name="Item" positionX="-3080" positionY="-372" width="128" height="118"/>
+        <element name="Measurement" positionX="-3060" positionY="-315" width="128" height="60"/>
     </elements>
 </model>

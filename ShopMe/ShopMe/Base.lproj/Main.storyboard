@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="O8T-bb-GiR">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--ShopMe-->
@@ -62,6 +63,46 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1804" y="492"/>
+        </scene>
+        <!--MigrationVC-->
+        <scene sceneID="2B7-1V-R6n">
+            <objects>
+                <viewController storyboardIdentifier="migration" id="70K-4a-fU1" customClass="MigrationVC" customModule="ShopMe" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="bwt-yQ-tdD"/>
+                        <viewControllerLayoutGuide type="bottom" id="3pC-xC-qtE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="oKE-Yb-gpf">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="CHp-hC-wo7">
+                                <rect key="frame" x="16" y="299" width="568" height="2"/>
+                            </progressView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Migration Progress 0%" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ogq-pn-6hW">
+                                <rect key="frame" x="212" y="270" width="177" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="ogq-pn-6hW" secondAttribute="trailing" constant="195" id="0h4-YL-KaS"/>
+                            <constraint firstItem="CHp-hC-wo7" firstAttribute="centerX" secondItem="ogq-pn-6hW" secondAttribute="centerX" id="VLK-hG-ezJ"/>
+                            <constraint firstItem="CHp-hC-wo7" firstAttribute="trailing" secondItem="oKE-Yb-gpf" secondAttribute="trailingMargin" id="Xk2-Hu-ohZ"/>
+                            <constraint firstAttribute="centerY" secondItem="CHp-hC-wo7" secondAttribute="centerY" id="dHD-kl-QTP"/>
+                            <constraint firstAttribute="centerY" secondItem="ogq-pn-6hW" secondAttribute="centerY" constant="19.5" id="fqo-1K-onh"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="label" destination="ogq-pn-6hW" id="kVL-Ug-9Mb"/>
+                        <outlet property="progressView" destination="CHp-hC-wo7" id="h50-Of-WRu"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kFY-4G-KNK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="279" y="-201"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="hJ6-oI-jms">
