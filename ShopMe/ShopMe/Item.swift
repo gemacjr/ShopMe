@@ -11,10 +11,11 @@ import CoreData
 
 class Item: NSManagedObject {
 
-    @NSManaged var name: String
-    @NSManaged var quantity: NSNumber
-    @NSManaged var photoData: NSData
     @NSManaged var collected: NSNumber
     @NSManaged var listed: NSNumber
+    @NSManaged var name: String
+    @NSManaged var photoData: NSData
+    @NSManaged var quantity: NSNumber
+    @NSManaged var unit: Unit
 
 }

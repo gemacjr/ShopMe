@@ -10,7 +10,6 @@
 		2C3858C91B7BDA1800889F2E /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C3858C81B7BDA1800889F2E /* CoreData.framework */; };
 		2C3858CC1B7BDA9100889F2E /* CDHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C3858CB1B7BDA9100889F2E /* CDHelper.swift */; };
 		2C3858D01B7BE66800889F2E /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2C3858CE1B7BE66800889F2E /* Model.xcdatamodeld */; };
-		2C3858D21B7BE92C00889F2E /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C3858D11B7BE92C00889F2E /* Item.swift */; };
 		2C3858D51B7BF42200889F2E /* Measurement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C3858D41B7BF42200889F2E /* Measurement.swift */; };
 		2C3858D81B7BF7ED00889F2E /* Amount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C3858D71B7BF7ED00889F2E /* Amount.swift */; };
 		2C3858DA1B7BF85100889F2E /* Model2toModel3.xcmappingmodel in Sources */ = {isa = PBXBuildFile; fileRef = 2C3858D91B7BF85100889F2E /* Model2toModel3.xcmappingmodel */; };
@@ -23,8 +22,10 @@
 		2C385F421B7AB192001DF1B3 /* GenericVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C385F411B7AB192001DF1B3 /* GenericVC.swift */; };
 		2C4F99E81B7C24BF003935AC /* CDMigration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C4F99E71B7C24BF003935AC /* CDMigration.swift */; };
 		2C4F99EB1B7C27A9003935AC /* PrepareTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C4F99EA1B7C27A9003935AC /* PrepareTVC.swift */; };
-		2C4F99EE1B7C28DC003935AC /* Unit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C4F99ED1B7C28DC003935AC /* Unit.swift */; };
 		2C4F99F01B7C29C1003935AC /* Model3toModel4.xcmappingmodel in Sources */ = {isa = PBXBuildFile; fileRef = 2C4F99EF1B7C29C1003935AC /* Model3toModel4.xcmappingmodel */; };
+		2C4F99F31B7C3D01003935AC /* Current Model.xcmappingmodel in Sources */ = {isa = PBXBuildFile; fileRef = 2C4F99F21B7C3D01003935AC /* Current Model.xcmappingmodel */; };
+		2C4F99F51B7C3EA2003935AC /* Unit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C4F99F41B7C3EA2003935AC /* Unit.swift */; };
+		2C4F99F71B7C3EA2003935AC /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C4F99F61B7C3EA2003935AC /* Item.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,7 +42,6 @@
 		2C3858C81B7BDA1800889F2E /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		2C3858CB1B7BDA9100889F2E /* CDHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CDHelper.swift; sourceTree = "<group>"; };
 		2C3858CF1B7BE66800889F2E /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
-		2C3858D11B7BE92C00889F2E /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		2C3858D31B7BF29100889F2E /* Model 2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "Model 2.xcdatamodel"; sourceTree = "<group>"; };
 		2C3858D41B7BF42200889F2E /* Measurement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Measurement.swift; sourceTree = "<group>"; };
 		2C3858D61B7BF77E00889F2E /* Model 3.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "Model 3.xcdatamodel"; sourceTree = "<group>"; };
@@ -61,8 +61,11 @@
 		2C4F99E71B7C24BF003935AC /* CDMigration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CDMigration.swift; sourceTree = "<group>"; };
 		2C4F99EA1B7C27A9003935AC /* PrepareTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrepareTVC.swift; sourceTree = "<group>"; };
 		2C4F99EC1B7C2864003935AC /* Model 4.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "Model 4.xcdatamodel"; sourceTree = "<group>"; };
-		2C4F99ED1B7C28DC003935AC /* Unit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Unit.swift; sourceTree = "<group>"; };
 		2C4F99EF1B7C29C1003935AC /* Model3toModel4.xcmappingmodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcmappingmodel; path = Model3toModel4.xcmappingmodel; sourceTree = "<group>"; };
+		2C4F99F11B7C3CC0003935AC /* Model 5.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "Model 5.xcdatamodel"; sourceTree = "<group>"; };
+		2C4F99F21B7C3D01003935AC /* Current Model.xcmappingmodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcmappingmodel; path = "Current Model.xcmappingmodel"; sourceTree = "<group>"; };
+		2C4F99F41B7C3EA2003935AC /* Unit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Unit.swift; sourceTree = "<group>"; };
+		2C4F99F61B7C3EA2003935AC /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,13 +99,14 @@
 		2C3858CD1B7BE62C00889F2E /* Data Model */ = {
 			isa = PBXGroup;
 			children = (
-				2C4F99ED1B7C28DC003935AC /* Unit.swift */,
+				2C4F99F61B7C3EA2003935AC /* Item.swift */,
+				2C4F99F41B7C3EA2003935AC /* Unit.swift */,
 				2C3858D71B7BF7ED00889F2E /* Amount.swift */,
 				2C3858D41B7BF42200889F2E /* Measurement.swift */,
-				2C3858D11B7BE92C00889F2E /* Item.swift */,
 				2C3858CE1B7BE66800889F2E /* Model.xcdatamodeld */,
 				2C3858D91B7BF85100889F2E /* Model2toModel3.xcmappingmodel */,
 				2C4F99EF1B7C29C1003935AC /* Model3toModel4.xcmappingmodel */,
+				2C4F99F21B7C3D01003935AC /* Current Model.xcmappingmodel */,
 			);
 			name = "Data Model";
 			sourceTree = "<group>";
@@ -292,18 +296,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2C4F99EE1B7C28DC003935AC /* Unit.swift in Sources */,
+				2C4F99F51B7C3EA2003935AC /* Unit.swift in Sources */,
 				2C3858CC1B7BDA9100889F2E /* CDHelper.swift in Sources */,
 				2C385F421B7AB192001DF1B3 /* GenericVC.swift in Sources */,
 				2C4F99F01B7C29C1003935AC /* Model3toModel4.xcmappingmodel in Sources */,
+				2C4F99F71B7C3EA2003935AC /* Item.swift in Sources */,
 				2C3858D01B7BE66800889F2E /* Model.xcdatamodeld in Sources */,
 				2C3858D81B7BF7ED00889F2E /* Amount.swift in Sources */,
 				2C4F99E81B7C24BF003935AC /* CDMigration.swift in Sources */,
 				2C3858DA1B7BF85100889F2E /* Model2toModel3.xcmappingmodel in Sources */,
-				2C3858D21B7BE92C00889F2E /* Item.swift in Sources */,
 				2C3858DD1B7BFC6900889F2E /* MigrationVC.swift in Sources */,
 				2C385F211B7AAEC0001DF1B3 /* AppDelegate.swift in Sources */,
 				2C3858D51B7BF42200889F2E /* Measurement.swift in Sources */,
+				2C4F99F31B7C3D01003935AC /* Current Model.xcmappingmodel in Sources */,
 				2C4F99EB1B7C27A9003935AC /* PrepareTVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -517,12 +522,13 @@
 		2C3858CE1B7BE66800889F2E /* Model.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
+				2C4F99F11B7C3CC0003935AC /* Model 5.xcdatamodel */,
 				2C4F99EC1B7C2864003935AC /* Model 4.xcdatamodel */,
 				2C3858D61B7BF77E00889F2E /* Model 3.xcdatamodel */,
 				2C3858D31B7BF29100889F2E /* Model 2.xcdatamodel */,
 				2C3858CF1B7BE66800889F2E /* Model.xcdatamodel */,
 			);
-			currentVersion = 2C4F99EC1B7C2864003935AC /* Model 4.xcdatamodel */;
+			currentVersion = 2C4F99F11B7C3CC0003935AC /* Model 5.xcdatamodel */;
 			path = Model.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;

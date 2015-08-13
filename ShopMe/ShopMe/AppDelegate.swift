@@ -38,7 +38,28 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func demo() {
         
-        CDHelper.shared
+        let context = CDHelper.shared.context
+        let kg =      NSEntityDescription.insertNewObjectForEntityForName("Unit", inManagedObjectContext: context) as! Unit
+        let oranges = NSEntityDescription.insertNewObjectForEntityForName("Item", inManagedObjectContext: context) as! Item
+        let bananas = NSEntityDescription.insertNewObjectForEntityForName("Item", inManagedObjectContext: context) as! Item
+        
+        kg.name = "Kg"
+        oranges.name = "Oranges"
+        bananas.name = "Bananas"
+        
+        oranges.quantity = NSNumber(float: 1)
+        bananas.quantity = NSNumber(float: 4)
+        
+        oranges.listed = NSNumber(bool: true)
+        bananas.listed = NSNumber(bool: true)
+        
+        oranges.unit = kg
+        bananas.unit = kg
+        
+        println("Inserted \(oranges.quantity)\(oranges.unit.name) of \(oranges.name)")
+        println("Inserted \(bananas.quantity)\(bananas.unit.name) of \(bananas.name)")
+        
+        CDHelper.saveSharedContext()
         
     }
 

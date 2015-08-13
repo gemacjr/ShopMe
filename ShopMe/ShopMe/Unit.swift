@@ -12,5 +12,6 @@ import CoreData
 class Unit: NSManagedObject {
 
     @NSManaged var name: String
+    @NSManaged var items: NSSet
 
 }
